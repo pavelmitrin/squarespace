@@ -64,6 +64,8 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
 }
 
 a:hover {

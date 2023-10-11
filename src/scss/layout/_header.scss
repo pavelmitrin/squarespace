@@ -5,31 +5,28 @@
 	.navbar {
 		max-height: 80px;
 		padding: 12px 0;
-		filter: invert(0);
-		transition: all 0.8s ease 0s;
+
 		.container { 
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 		}
 
+	
+
 		&__brand {
 			display: flex;
 			align-items: center;
 
-			
+			&:hover > .navbar__brand_logo-img{
+				transition: all 0.8s ease 0s;
+				filter: invert(70%);
+			}
 
 			&_logo-img {
 				margin-right: 8px;
 				filter: invert(0);
-				text-shadow: 1px 1px 10px transparent;
 				transition: all 0.8s ease 0s;
-
-				&:hover {
-				transition: all 0.8s ease 0s;
-				filter: invert(70%);
-				text-shadow: 1px 1px 10px #000;
-			}
 			}
 
 			&_logo-text {
@@ -79,10 +76,16 @@
 			border: 1px solid transparent;
 			border-radius: 0;
 			transition: all 1.8s ease 0s;
+
+			&:hover {
+				transform: scale(1.1);
+				z-index: 3;
+			}
 		}
 		
 		&__log-in {
-			width: 119px;
+			min-width: 119px;
+			margin: 0 10px 0 0;
 
 			&:hover {
 				border: 1px solid #fff;
@@ -91,7 +94,7 @@
 		}
 		
 		&__log-start {
-			width: 153px;
+			min-width: 153px;
 			background-color: #fff;
 			color: #000;
 			
